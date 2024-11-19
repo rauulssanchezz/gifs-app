@@ -1,0 +1,10 @@
+
+html, body {
+  height: 100%;
+  width: 100%;/* Hace que la raíz del documento ocupe toda la altura de la ventana */
+  margin: 0;
+  padding: 0;   /* Elimina márgenes por defecto */
+  overflow-x: hidden;
+}
+
+
