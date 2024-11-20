@@ -1,0 +1,18 @@
+
+<div class="card text-center bg-dark" style="height: 350px; display: flex; flex-direction: column;">
+
+  <shared-lazy-image [url]="gif.images.downsized_medium.url" alt="(gif.title.trim() || 'No name')"></shared-lazy-image>
+
+  <!-- <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top" style="object-fit: cover; height: 80%"> -->
+
+  <div class="card-body text-white" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 10px;">
+
+    <p class="card-text">
+      {{(gif.title.trim()|| 'No Title')}}
+    </p>
+
+  </div>
+
+</div>
+
+

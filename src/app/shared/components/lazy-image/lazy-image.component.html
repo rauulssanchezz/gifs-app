@@ -1,0 +1,18 @@
+<div class="d-flex justify-content-center" style="height: 280px;">
+
+  <img
+    [src]="url"
+    class="card-img-top animate__animated animate__fadeIn"
+    (load)="onLoad()"
+    [ngStyle]="{display: hasLoaded? '' : 'none'}"
+  />
+
+  <img
+  *ngIf="!hasLoaded"
+    src="/loader.svg"
+    alt="Cargando"
+    class="card-img-top"
+    style="padding: 25%;"
+  />
+
+</div>

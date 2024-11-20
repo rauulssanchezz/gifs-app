@@ -1,11 +1,20 @@
 div{
-  width: 100%;
-  height: max-content;
-  min-height: 100%;
-  margin: 0;
+  display: flex;              /* Usa flexbox */
+  width: 100%;                /* Todo el ancho de la pantalla */
+  height: 100vh;              /* Toda la altura de la pantalla */
+  margin: 0;                  /* Sin margen */
   padding: 0;
 }
 
 #shared-sidebar{
-  width: 20%;
+  flex: 0 0 20%;              /* Sidebar ocupa el 20% del ancho */
+  max-width: 20%;             /* Nunca puede ser más ancho */
+  min-width: 20%;
+}
+
+#home-page {
+  flex: 0 0 80%;              /* Homepage ocupa el 80% del ancho */
+  max-width: 80%;             /* Nunca puede ser más ancho */
+  min-width: 80%;             /* Nunca puede ser más estrecho */
+  overflow-x: hidden;           /* Permite desplazamiento vertical si el contenido excede */
 }

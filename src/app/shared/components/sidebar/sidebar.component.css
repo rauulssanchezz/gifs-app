@@ -6,3 +6,8 @@ h3{
   color: white;
   word-wrap: break-word;
 }
+
+button{
+  overflow: hidden; /* Esconde el texto que se salga del botón */
+  text-overflow: ellipsis; /* Muestra "..." al final si el texto es muy largo */
+}

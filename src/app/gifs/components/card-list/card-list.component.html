@@ -1,22 +1,6 @@
 <div class="row mt-3">
 
-  <div *ngFor="let gif of gifs" class="col-md-3 col-sm-6 mb-2">
-
-    <div class="card text-center bg-dark" style="height: 350px; display: flex; flex-direction: column;">
-
-      <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top" style="object-fit: cover; height: 80%">
-
-      <div class="card-body text-white" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 10px">
-
-        <p class="card-text">
-          {{gif.title}}
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
+  <gifs-card *ngFor="let gif of gifs" class="col-md-3 col-sm-6 mb-2" [gif]="gif"></gifs-card>
 
 </div>
 
